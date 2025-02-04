@@ -1,6 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
+import { get } from "http"
+import { getWhatsappUrl } from "@/utils/social-media"
 
 export default function FeaturedWorkSection() {
   return (
@@ -19,7 +21,8 @@ export default function FeaturedWorkSection() {
                 blend of innovation and technical expertise.
               </p>
               <Link
-                href="#contact"
+                href={getWhatsappUrl("Hello, I'd like to create a project with you!")}
+                target="_blank"
                 className="inline-flex items-center gap-2 border border-white px-4 sm:px-6 py-2 sm:py-3 hover:bg-white hover:text-black transition-colors"
               >
                 Let's create <ArrowRight className="w-4 h-4" />
@@ -93,7 +96,8 @@ export default function FeaturedWorkSection() {
                 design, development, and branding.
               </p>
               <Link
-                href="#contact"
+                href={getWhatsappUrl("Hello, I'd like to create a project with you!")}
+                target="_blank"
                 className="inline-flex items-center gap-2 border border-white px-4 sm:px-6 py-2 sm:py-3 hover:bg-white hover:text-black transition-colors"
               >
                 Start a project <ArrowRight className="w-4 h-4" />

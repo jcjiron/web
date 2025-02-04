@@ -1,6 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
+import { get } from "http"
+import { getWhatsappUrl } from "@/utils/social-media"
 
 export default function TestimonialsSection() {
   return (
@@ -18,7 +20,8 @@ export default function TestimonialsSection() {
               to dedicated and current market.
             </p>
             <Link
-              href="#contact"
+              href={getWhatsappUrl("Hello, I'd like to discuss a project with you!")}
+              target="_blank"
               className="inline-flex items-center gap-2 border border-white px-4 sm:px-6 py-2 sm:py-3 hover:bg-white hover:text-black transition-colors rounded-full"
             >
               Let's discuss <ArrowRight className="w-4 h-4" />

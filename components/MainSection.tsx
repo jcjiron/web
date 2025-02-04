@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
+import { getWhatsappUrl } from "@/utils/social-media"
 
 export default function MainSection() {
   return (
@@ -10,7 +11,7 @@ export default function MainSection() {
         <div id="picture-slider" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-8 sm:mb-16">
           <div className="aspect-[4/3] relative bg-gray-900">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/original-4f6cc5db81c94d5f30a8c29510f180f2-9LbbZHuh0oCR2j0tCIRXZcFaqtR4ek.webp"
+              src="web_development2.webp"
               alt="The Maker - Artistic Portfolio"
               fill
               className="object-cover"
@@ -18,7 +19,7 @@ export default function MainSection() {
           </div>
           <div className="aspect-[4/3] relative bg-gray-900">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/original-f1f73d18773a444891df8e9fe6b7839a-xeZSsePL14Z7mQ9CrCfMe1vdob66EF.webp"
+              src="web_design2.webp"
               alt="Awards and Achievements Showcase"
               fill
               className="object-cover"
@@ -26,7 +27,7 @@ export default function MainSection() {
           </div>
           <div className="aspect-[4/3] relative bg-gray-900">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/original-af751e752193ebab93c44bbb81b917c1-pjnqNg5oOY2FVFBgcUmNfcH4sbimTZ.webp"
+              src="branding2.webp"
               alt="Burned Art Portfolio Website"
               fill
               className="object-cover"
@@ -47,7 +48,8 @@ export default function MainSection() {
               for businesses that demand excellence.
             </p>
             <Link
-              href="#contact"
+              href={getWhatsappUrl("Hello, I'd like to collaborate with you!")}
+              target="_blank"
               className="inline-flex items-center gap-2 border border-white px-4 sm:px-6 py-2 sm:py-3 hover:bg-white hover:text-black transition-colors"
             >
               Let's collaborate <ArrowRight className="w-4 h-4" />
