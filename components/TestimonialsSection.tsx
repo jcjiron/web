@@ -1,7 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
-import { get } from "http"
 import { getWhatsappUrl } from "@/utils/social-media"
 
 export default function TestimonialsSection() {
@@ -30,37 +29,38 @@ export default function TestimonialsSection() {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-16">
+        <div className="grid md:grid-cols-2 gap-8 ">
           {[
             {
-              image: "/placeholder.svg?height=600&width=450",
+              image: "/edgar.webp",
               quote:
-                "Mention Mr manners opinion if garrets enabled. To occasional dissimilar impossible sentiments. Do fortune account written prepare invited no passage.",
-              name: "Olivia Scarlett",
-              role: "UI/UX Designer",
+                "Thanks for your resillience. JC is a super perfectionist and talented person.",
+              name: "Edagr Cabrera",
+              role: "Movinglake Founder",
             },
             {
-              image: "/placeholder.svg?height=600&width=450",
+              image: "/julio.webp",
               quote:
-                "Mention Mr manners opinion if garrets enabled. To occasional dissimilar impossible sentiments. Do fortune account written prepare invited no passage.",
-              name: "Kiearnan fagan",
-              role: "UI/UX Designer",
+                "Great Developer, always on time and with a great attitude. I would recommend him to anyone.",
+              name: "Julio cueto",
+              role: "TCS Manager",
             },
           ].map((testimonial, index) => (
-            <div key={index} className="space-y-6">
-              <div className="relative aspect-[3/4] w-full overflow-hidden rounded-lg">
+            <div key={index} className=" flex gap-4">
+              <div className="relative overflow-hidden rounded-lg">
                 <Image
+                  width={220}
+                  height={264}
                   src={testimonial.image || "/placeholder.svg"}
                   alt="Testimonial portrait"
-                  fill
                   className="object-cover"
                 />
               </div>
-              <div className="space-y-4">
-                <blockquote className="text-lg sm:text-xl text-gray-300">{testimonial.quote}</blockquote>
+              <div className=" flex flex-col justify-between">
+                <p className=" text-gray-300">{testimonial.quote}</p>
                 <div>
-                  <div className="text-xl font-semibold">{testimonial.name}</div>
-                  <div className="text-gray-400">{testimonial.role}</div>
+                  <div className="text-sm font-semibold">{testimonial.name}</div>
+                  <div className="text-sm text-gray-400">{testimonial.role}</div>
                 </div>
               </div>
             </div>

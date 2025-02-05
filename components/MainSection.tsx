@@ -77,9 +77,9 @@ export default function MainSection() {
         </div>
 
         {/* Exhibition Image */}
-        <div className="aspect-[16/9] relative bg-gray-900 mb-16 sm:mb-32">
+        {/* <div className="aspect-[16/9] relative bg-gray-900 mb-16 sm:mb-32">
           <Image src="/placeholder.svg?height=600&width=1200" alt="Project Showcase" fill className="object-cover" />
-        </div>
+        </div> */}
       </div>
     </section>
   )
