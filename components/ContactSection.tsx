@@ -2,6 +2,25 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 
+
+const links = [
+  {
+    url: "https://www.linkedin.com/in/juancarlosjiron",
+    label: "LinkedIn",
+    id: "linkedin"
+  },
+  {
+    url: "https://github.com/jcjiron",
+    label: "GitHub",
+    id: "github"
+  },
+  {
+    id: "youtube",
+    url: "https://www.youtube.com/@jcjiron",
+    label: "YouTube"
+  }
+];
+
 export default function ContactSection() {
   return (
     <section id="contact" className="max-w-7xl mx-auto mt-16 sm:mt-32">
@@ -59,9 +78,9 @@ export default function ContactSection() {
         <div className="space-y-4 md:col-span-2">
           <div className="text-sm text-gray-400">Connect</div>
           <div className="flex gap-4">
-            {["LinkedIn", "GitHub", "Twitter", "Email"].map((social) => (
-              <Link key={social} href="#" className="hover:text-gray-300">
-                {social}
+            {links.map((link) => (
+              <Link key={link.id} href={link.url} className="hover:text-gray-300" target="_blank" rel="noopener noreferrer">
+                {link.label}
               </Link>
             ))}
           </div>
