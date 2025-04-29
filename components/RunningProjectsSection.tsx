@@ -1,6 +1,7 @@
+"use client"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, ArrowLeft } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import { getWhatsappUrl } from "@/utils/social-media"
 
 export default function RunningProjectsSection() {
@@ -44,4 +45,3 @@ export default function RunningProjectsSection() {
     </section>
   )
 }
-

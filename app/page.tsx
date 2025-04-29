@@ -4,8 +4,7 @@ import FeaturedWorkSection from "@/components/FeaturedWorkSection"
 import RunningProjectsSection from "@/components/RunningProjectsSection"
 import TestimonialsSection from "@/components/TestimonialsSection"
 import ContactSection from "@/components/ContactSection"
-import Link from "next/link"
-import { Nabvar } from "@/components/Nabvar"
+import { Footer } from "@/components/Footer"
 
 export const metadata: Metadata = {
   title: "Juan Carlos | Web Design & Development Expert",
@@ -67,13 +66,12 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Navigation */}
-      <Nabvar />
       <MainSection />
       <FeaturedWorkSection />
       <RunningProjectsSection />
       <TestimonialsSection />
       <ContactSection />
+      <Footer />
     </div>
   )
 }
-

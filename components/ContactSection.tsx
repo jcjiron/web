@@ -1,25 +1,8 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
-
-
-const links = [
-  {
-    url: "https://www.linkedin.com/in/juancarlosjiron",
-    label: "LinkedIn",
-    id: "linkedin"
-  },
-  {
-    url: "https://github.com/jcjiron",
-    label: "GitHub",
-    id: "github"
-  },
-  {
-    id: "youtube",
-    url: "https://www.youtube.com/@jcjiron",
-    label: "YouTube"
-  }
-];
 
 export default function ContactSection() {
   return (
@@ -56,49 +39,6 @@ export default function ContactSection() {
           />
         </div>
       </div>
-
-      {/* Footer */}
-      <div className="mt-16 sm:mt-32 grid grid-cols-2 sm:grid-cols-4 gap-8">
-        <div className="space-y-4">
-          <div className="text-sm text-gray-400">Navigation</div>
-          {["Work", "About", "Contact", "Services"].map((item) => (
-            <Link key={item} href="#" className="block hover:text-gray-300">
-              {item}
-            </Link>
-          ))}
-        </div>
-        <div className="space-y-4">
-          <div className="text-sm text-gray-400">Services</div>
-          {["Web Design", "Web Development", "Branding", "Mobile Apps"].map((item) => (
-            <Link key={item} href="#" className="block hover:text-gray-300">
-              {item}
-            </Link>
-          ))}
-        </div>
-        <div className="space-y-4 md:col-span-2">
-          <div className="text-sm text-gray-400">Connect</div>
-          <div className="flex gap-4">
-            {links.map((link) => (
-              <Link key={link.id} href={link.url} className="hover:text-gray-300" target="_blank" rel="noopener noreferrer">
-                {link.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-8 sm:mt-16 flex flex-col sm:flex-row justify-between items-center pt-8 border-t border-white/10">
-        <div className="text-sm text-gray-400 mb-4 sm:mb-0">© 2023 Juan Carlos Jirón Juárez. All rights reserved.</div>
-        <div className="flex gap-4">
-          <Link href="#" className="hover:text-gray-300">
-            Privacy Policy
-          </Link>
-          <Link href="#" className="hover:text-gray-300">
-            Terms of Service
-          </Link>
-        </div>
-      </div>
     </section>
   )
 }
-

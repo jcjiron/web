@@ -1,7 +1,7 @@
+"use client"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
-import { getWhatsappUrl } from "@/utils/social-media"
 
 export default function MainSection() {
   return (
@@ -10,28 +10,34 @@ export default function MainSection() {
         {/* Project Images Grid */}
         <div id="picture-slider" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-8 sm:mb-16">
           <div className="aspect-[4/3] relative bg-gray-900">
-            <Image
-              src="web_development2.webp"
-              alt="The Maker - Artistic Portfolio"
-              fill
-              className="object-cover"
-            />
+            <Link href="/work/tcs">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/web_development2-Chg5RxdHoL5nyluF5UOyPJanYtuyjx.webp"
+                alt="Portfolio services showcase"
+                fill
+                className="object-cover hover:cursor-pointer"
+              />
+            </Link>
           </div>
           <div className="aspect-[4/3] relative bg-gray-900">
-            <Image
-              src="web_design2.webp"
-              alt="Awards and Achievements Showcase"
-              fill
-              className="object-cover"
-            />
+            <Link href="/work/casai">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/web_design2-mYE0jvbNxH40DT6RbRs7X4FR3FAMFr.webp"
+                alt="Modern apartment booking interface design"
+                fill
+                className="object-cover hover:cursor-pointer"
+              />
+            </Link>
           </div>
           <div className="aspect-[4/3] relative bg-gray-900">
-            <Image
-              src="branding2.webp"
-              alt="Burned Art Portfolio Website"
-              fill
-              className="object-cover"
-            />
+            <Link href="/work/branding">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/branding2-hRdZcwAUOQ79su9YN60RKD9kz1zVe6.webp"
+                alt="Luxury branding example - Marmor del Valle"
+                fill
+                className="object-cover hover:cursor-pointer"
+              />
+            </Link>
           </div>
         </div>
 
@@ -39,8 +45,8 @@ export default function MainSection() {
         <div className="mb-16 sm:mb-32">
           <div className="text-sm mb-4">(HELLO, I'M JUAN CARLOS)</div>
           <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6 sm:mb-8">
-            SOFTWARE <span className="font-serif italic font-normal">engineer</span>
-            <br className="hidden sm:block" /> MANAGER
+            SOFTWARE <span className="font-serif italic font-normal">engineer</span> MANAGER
+            <br className="hidden sm:block" />
           </h1>
           <div className="flex flex-col sm:flex-row justify-between items-start gap-6 sm:gap-0">
             <p className="max-w-md text-gray-400">
@@ -48,8 +54,7 @@ export default function MainSection() {
               for businesses that demand excellence.
             </p>
             <Link
-              href={getWhatsappUrl("Hello, I'd like to collaborate with you!")}
-              target="_blank"
+              href="/contact"
               className="inline-flex items-center gap-2 border border-white px-4 sm:px-6 py-2 sm:py-3 hover:bg-white hover:text-black transition-colors"
             >
               Let's collaborate <ArrowRight className="w-4 h-4" />
@@ -65,23 +70,22 @@ export default function MainSection() {
           </p>
 
           <div className="space-y-4 sm:space-y-6">
-            {["WEB DESIGN", "WEB DEVELOPMENT", "BRANDING", "MOBILE APPS"].map((service, index) => (
+            {[
+              { title: "WEB DESIGN", linkLabel: "Explore", url: "/work/design" },
+              { title: "WEB DEVELOPMENT", linkLabel: "Explore", url: "/work/web" },
+              { title: "BRANDING", linkLabel: "Explore", url: "/work/branding" },
+              { title: "MOBILE APPS", linkLabel: "Explore", url: "/work/mobile" },
+            ].map((service, index) => (
               <div key={index} className="flex justify-between items-center py-4 sm:py-6 border-t border-gray-800">
-                <h3 className="text-lg sm:text-xl">{service}</h3>
-                <Link href="#" className="inline-flex items-center gap-2 text-sm hover:text-gray-300">
-                  Explore <ArrowRight className="w-4 h-4" />
+                <h3 className="text-lg sm:text-xl">{service.title}</h3>
+                <Link href={service.url} className="inline-flex items-center gap-2 text-sm hover:text-gray-300">
+                  {service.linkLabel} <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             ))}
           </div>
         </div>
-
-        {/* Exhibition Image */}
-        {/* <div className="aspect-[16/9] relative bg-gray-900 mb-16 sm:mb-32">
-          <Image src="/placeholder.svg?height=600&width=1200" alt="Project Showcase" fill className="object-cover" />
-        </div> */}
       </div>
     </section>
   )
 }
-

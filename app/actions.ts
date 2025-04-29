@@ -19,4 +19,3 @@ As a Software Engineer, I developed an Android application used nationwide for d
     },
   })
 }
-

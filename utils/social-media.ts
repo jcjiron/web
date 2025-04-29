@@ -1,4 +1,4 @@
-
-export const getWhatsappUrl = (text: string) => {
-    return `https://api.whatsapp.com/send?text=${text}`;
+export function getWhatsappUrl(message: string): string {
+  const encodedMessage = encodeURIComponent(message)
+  return `https://wa.me/5583679908?text=${encodedMessage}`
 }
