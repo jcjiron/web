@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 export default function HeroSection() {
   return (
@@ -24,27 +25,29 @@ export default function HeroSection() {
         </div>
 
         {/* Hero Image Area */}
-        <div className="relative aspect-[16/9] rounded-3xl overflow-hidden">
-          <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-01-20%20at%2016.59.01-ibCB67QY10et58WW1RgWTpbuaUJdTl.jpeg"
-            alt="Branding showcase"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-          <div className="absolute bottom-0 left-0 right-0 p-6 flex justify-between items-end">
-            <div className="space-y-2">
-              <h2 className="text-xl font-light">Brand Development</h2>
-              <p className="text-sm text-gray-300 max-w-md">
-                Creating distinctive brand identities and strategies that resonate with target audiences.
-              </p>
-            </div>
-            <div className="text-sm">
-              <span className="opacity-50">01</span> / <span>03</span>
+        <Link href="https://www.marmordelvalle.com" target="_blank" className="block relative group cursor-pointer">
+          <div className="relative aspect-[16/9] rounded-3xl overflow-hidden transition-transform duration-300 group-hover:scale-[1.02]">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-01-20%20at%2016.59.01-ibCB67QY10et58WW1RgWTpbuaUJdTl.jpeg"
+              alt="Branding showcase"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-6 flex justify-between items-end">
+              <div className="space-y-2">
+                <h2 className="text-xl font-light">Brand Development</h2>
+                <p className="text-sm text-gray-300 max-w-md">
+                  Creating distinctive brand identities and strategies that resonate with target audiences.
+                </p>
+              </div>
+              <div className="text-sm">
+                <span className="opacity-50">01</span> / <span>03</span>
+              </div>
             </div>
           </div>
-        </div>
+        </Link>
       </div>
     </section>
   )

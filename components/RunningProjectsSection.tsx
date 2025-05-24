@@ -34,7 +34,7 @@ export default function RunningProjectsSection() {
           <div className="aspect-[16/9] relative overflow-hidden rounded-2xl transition-transform duration-300 group-hover:scale-[1.02]">
             <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity z-10"></div>
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/muebles-A5xVCsLbOEVKVWpNLV9ZmUSDfCVfuz.jpeg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/branding2-hRdZcwAUOQ79su9YN60RKD9kz1zVe6.webp"
               alt="Luxury bathroom interior with marble finishes - Click to view branding work"
               fill
               className="object-cover"
