@@ -30,17 +30,18 @@ export default function RunningProjectsSection() {
         </div>
 
         {/* Project Showcase */}
-        <div className="relative group">
-          <div className="aspect-[16/9] relative overflow-hidden rounded-2xl">
+        <Link href="/work/branding" className="block relative group cursor-pointer">
+          <div className="aspect-[16/9] relative overflow-hidden rounded-2xl transition-transform duration-300 group-hover:scale-[1.02]">
+            <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity z-10"></div>
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/muebles-A5xVCsLbOEVKVWpNLV9ZmUSDfCVfuz.jpeg"
-              alt="Luxury bathroom interior with marble finishes"
+              alt="Luxury bathroom interior with marble finishes - Click to view branding work"
               fill
               className="object-cover"
               priority
             />
           </div>
-        </div>
+        </Link>
       </div>
     </section>
   )

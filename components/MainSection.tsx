@@ -61,30 +61,6 @@ export default function MainSection() {
             </Link>
           </div>
         </div>
-
-        {/* Services Section */}
-        <div className="mb-16 sm:mb-32">
-          <p className="max-w-md mb-8 sm:mb-16">
-            With over 7 years of experience, I bring your vision to life with cutting-edge designs and robust
-            development, creating waves of innovation and success for your brand.
-          </p>
-
-          <div className="space-y-4 sm:space-y-6">
-            {[
-              { title: "WEB DESIGN", linkLabel: "Explore", url: "/work/design" },
-              { title: "WEB DEVELOPMENT", linkLabel: "Explore", url: "/work/web" },
-              { title: "BRANDING", linkLabel: "Explore", url: "/work/branding" },
-              { title: "MOBILE APPS", linkLabel: "Explore", url: "/work/mobile" },
-            ].map((service, index) => (
-              <div key={index} className="flex justify-between items-center py-4 sm:py-6 border-t border-gray-800">
-                <h3 className="text-lg sm:text-xl">{service.title}</h3>
-                <Link href={service.url} className="inline-flex items-center gap-2 text-sm hover:text-gray-300">
-                  {service.linkLabel} <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   )
