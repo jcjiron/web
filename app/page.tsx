@@ -1,31 +1,31 @@
 import type { Metadata } from "next"
-import MainSection from "@/components/MainSection"
-import FeaturedWorkSection from "@/components/FeaturedWorkSection"
-import RunningProjectsSection from "@/components/RunningProjectsSection"
-import TestimonialsSection from "@/components/TestimonialsSection"
-import ContactSection from "@/components/ContactSection"
+import HeroSection from "@/components/sections/HeroSection"
+import PainPointsSection from "@/components/sections/PainPointsSection"
+import ValuePropositionSection from "@/components/sections/ValuePropositionSection"
+import CaseStudiesSection from "@/components/sections/CaseStudiesSection"
+import FinalCTASection from "@/components/sections/FinalCTASection"
 import { Footer } from "@/components/Footer"
 
 export const metadata: Metadata = {
-  title: "Juan Carlos | Web Design & Development Expert",
+  title: "Juan Carlos | Sistemas a Medida para Empresas en Crecimiento",
   description:
-    "Expert web designer and developer with 7+ years of experience. Specializing in luxury web design, modern web development, and strategic branding solutions for businesses.",
+    "¿Tu empresa está creciendo más rápido que tu sistema? Diseño software a medida que no solo aguanta el crecimiento... lo potencia. Agenda una llamada sin compromiso.",
   keywords: [
-    "web design",
-    "web development",
-    "branding",
-    "UI/UX design",
-    "React developer",
-    "Next.js expert",
+    "sistemas a medida",
+    "software empresarial",
+    "desarrollo personalizado",
+    "escalabilidad empresarial",
+    "automatización de procesos",
     "Juan Carlos Jiron",
-    "frontend developer",
-    "software engineer",
-    "Mexico City developer",
+    "consultor tecnológico",
+    "software engineer manager",
+    "soluciones empresariales",
+    "México",
   ],
   openGraph: {
-    title: "Juan Carlos | Web Design & Development Expert",
+    title: "Juan Carlos | Sistemas a Medida para Empresas en Crecimiento",
     description:
-      "Transform your digital presence with expert web design, development, and branding services. View my portfolio of high-impact digital solutions.",
+      "Transformo empresas que han superado las soluciones genéricas. Diseño sistemas centralizados que te permiten escalar sin perder control.",
     type: "website",
     url: "https://juancarlosjiron.com",
     images: [
@@ -33,15 +33,15 @@ export const metadata: Metadata = {
         url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_2292-019aWEtaQKO4sx5JgMnU206SpQrOH0.webp",
         width: 1200,
         height: 630,
-        alt: "Juan Carlos - Web Design & Development Expert",
+        alt: "Juan Carlos - Sistemas a Medida para Empresas",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Juan Carlos | Web Design & Development Expert",
+    title: "Juan Carlos | Sistemas a Medida para Empresas en Crecimiento",
     description:
-      "Transform your digital presence with expert web design, development, and branding services. View my portfolio of high-impact digital solutions.",
+      "Transformo empresas que han superado las soluciones genéricas. Diseño sistemas centralizados que te permiten escalar sin perder control.",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_2292-019aWEtaQKO4sx5JgMnU206SpQrOH0.webp"],
   },
   alternates: {
@@ -65,12 +65,11 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Navigation */}
-      <MainSection />
-      <FeaturedWorkSection />
-      <RunningProjectsSection />
-      <TestimonialsSection />
-      <ContactSection />
+      <HeroSection />
+      <PainPointsSection />
+      <ValuePropositionSection />
+      <CaseStudiesSection />
+      <FinalCTASection />
       <Footer />
     </div>
   )
