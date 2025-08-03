@@ -17,7 +17,7 @@ export default function HeroSection() {
         <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center">
           <Link
             href="#contacto"
-            className="group relative overflow-hidden rounded-full bg-white px-8 py-3 transition-colors hover:bg-gray-100"
+            className="group relative overflow-hidden rounded-full bg-white px-8 py-3 transition-colors hover:bg-gray-100 flex justify-center"
           >
             <span className="relative z-10 flex items-center gap-2 text-black font-medium">
               Quiero una solución <ArrowRight className="w-4 h-4" />
