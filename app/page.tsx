@@ -7,25 +7,25 @@ import FinalCTASection from "@/components/sections/FinalCTASection"
 import { Footer } from "@/components/Footer"
 
 export const metadata: Metadata = {
-  title: "Juan Carlos | Sistemas a Medida para Empresas en Crecimiento",
+  title: "Juan Carlos | Custom Systems for Growing Businesses",
   description:
-    "¿Tu empresa está creciendo más rápido que tu sistema? Diseño software a medida que no solo aguanta el crecimiento... lo potencia. Agenda una llamada sin compromiso.",
+    "Is your company growing faster than your system? I design custom software that not only withstands growth... it powers it. Schedule a no-obligation call.",
   keywords: [
-    "sistemas a medida",
-    "software empresarial",
-    "desarrollo personalizado",
-    "escalabilidad empresarial",
-    "automatización de procesos",
+    "custom systems",
+    "business software",
+    "custom development",
+    "business scalability",
+    "process automation",
     "Juan Carlos Jiron",
-    "consultor tecnológico",
+    "technology consultant",
     "software engineer manager",
-    "soluciones empresariales",
-    "México",
+    "business solutions",
+    "Mexico",
   ],
   openGraph: {
-    title: "Juan Carlos | Sistemas a Medida para Empresas en Crecimiento",
+    title: "Juan Carlos | Custom Systems for Growing Businesses",
     description:
-      "Transformo empresas que han superado las soluciones genéricas. Diseño sistemas centralizados que te permiten escalar sin perder control.",
+      "I transform companies that have outgrown generic solutions. I design centralized systems that allow you to scale without losing control.",
     type: "website",
     url: "https://juancarlosjiron.com",
     images: [
@@ -33,15 +33,15 @@ export const metadata: Metadata = {
         url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_2292-019aWEtaQKO4sx5JgMnU206SpQrOH0.webp",
         width: 1200,
         height: 630,
-        alt: "Juan Carlos - Sistemas a Medida para Empresas",
+        alt: "Juan Carlos - Custom Systems for Businesses",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Juan Carlos | Sistemas a Medida para Empresas en Crecimiento",
+    title: "Juan Carlos | Custom Systems for Growing Businesses",
     description:
-      "Transformo empresas que han superado las soluciones genéricas. Diseño sistemas centralizados que te permiten escalar sin perder control.",
+      "I transform companies that have outgrown generic solutions. I design centralized systems that allow you to scale without losing control.",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_2292-019aWEtaQKO4sx5JgMnU206SpQrOH0.webp"],
   },
   alternates: {

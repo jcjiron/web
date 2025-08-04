@@ -54,9 +54,9 @@ export default function FinalCTASection() {
         {!isSubmitted ? (
           <>
             <div className="text-center mb-12">
-              <h2 className="text-4xl sm:text-5xl font-bold mb-6">¿Hablamos?</h2>
+              <h2 className="text-4xl sm:text-5xl font-bold mb-6">Shall we talk?</h2>
               <p className="text-xl text-gray-300">
-                Cuéntame sobre tu empresa y te doy un diagnóstico inicial gratuito
+                Tell me about your company and I'll give you a free initial diagnosis
               </p>
             </div>
 
@@ -66,7 +66,7 @@ export default function FinalCTASection() {
                   <input
                     type="text"
                     name="name"
-                    placeholder="Tu nombre"
+                    placeholder="Your name"
                     value={formData.name}
                     onChange={handleChange}
                     className="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-white"
@@ -77,7 +77,7 @@ export default function FinalCTASection() {
                   <input
                     type="email"
                     name="email"
-                    placeholder="tu@empresa.com"
+                    placeholder="your@company.com"
                     value={formData.email}
                     onChange={handleChange}
                     className="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-white"
@@ -91,7 +91,7 @@ export default function FinalCTASection() {
                 <input
                   type="tel" // Use type="tel" for phone numbers
                   name="phone"
-                  placeholder="Tu número de teléfono"
+                  placeholder="Your phone number"
                   value={formData.phone}
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-white"
@@ -103,7 +103,7 @@ export default function FinalCTASection() {
                 <input
                   type="text"
                   name="company"
-                  placeholder="Nombre de tu empresa"
+                  placeholder="Your company name"
                   value={formData.company}
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-white"
@@ -114,7 +114,7 @@ export default function FinalCTASection() {
               <div>
                 <textarea
                   name="message"
-                  placeholder="Cuéntame brevemente cuál es tu principal desafío tecnológico..."
+                  placeholder="Tell me briefly about your main technological challenge..."
                   value={formData.message}
                   onChange={handleChange}
                   rows={4}
@@ -128,20 +128,20 @@ export default function FinalCTASection() {
                 disabled={isSubmitting}
                 className="w-full bg-white text-black px-8 py-4 font-semibold hover:bg-gray-100 transition-colors rounded-lg disabled:opacity-50"
               >
-                {isSubmitting ? "Enviando..." : "Quiero mi diagnóstico gratuito"}
+                {isSubmitting ? "Sending..." : "I want my free diagnosis"}
               </button>
 
-              <p className="text-xs text-gray-400 text-center">Te respondo en menos de 24 horas • Sin compromiso</p>
+              <p className="text-xs text-gray-400 text-center">I'll reply in less than 24 hours • No commitment</p>
             </form>
           </>
         ) : (
           <div className="text-center py-12">
             <CheckCircle className="w-16 h-16 text-white mx-auto mb-6" />
-            <h3 className="text-3xl font-bold mb-4">¡Perfecto!</h3>
+            <h3 className="text-3xl font-bold mb-4">Perfect!</h3>
             <p className="text-xl text-gray-300 mb-6">
-              Recibí tu mensaje. Te contacto en las próximas 24 horas para agendar una llamada.
+              I received your message. I'll contact you within the next 24 hours to schedule a call.
             </p>
-            <p className="text-gray-400">Mientras tanto, puedes revisar algunos de mis trabajos anteriores.</p>
+            <p className="text-gray-400">Meanwhile, you can check out some of my previous work.</p>
           </div>
         )}
       </div>

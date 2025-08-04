@@ -5,19 +5,19 @@ export default function PainPointsSection() {
   const painPoints = [
     {
       icon: <TrendingDown className="w-8 h-8" />,
-      title: "Software que ya no escala",
-      description: "Tu sistema funcionaba perfecto con 50 empleados, pero ahora con 300 se cuelga constantemente.",
+      title: "Software that no longer scales",
+      description: "Your system worked perfectly with 50 employees, but now with 300, it constantly crashes.",
     },
     {
       icon: <Database className="w-8 h-8" />,
-      title: "Dependencia de Excel y parches",
+      title: "Reliance on Excel and patches",
       description:
-        "Procesos críticos que dependen de hojas de cálculo compartidas y soluciones temporales que se volvieron permanentes.",
+        "Critical processes that depend on shared spreadsheets and temporary solutions that became permanent.",
     },
     {
       icon: <Workflow className="w-8 h-8" />,
-      title: "Sistemas que no se comunican",
-      description: "Cada área tiene su propia herramienta y nadie sabe qué está pasando en tiempo real.",
+      title: "Systems that don't communicate",
+      description: "Each area has its own tool, and no one knows what's happening in real-time.",
     },
   ]
 
@@ -25,11 +25,11 @@ export default function PainPointsSection() {
     <section id="pain-points" className="py-20 px-4 sm:px-6 bg-zinc-900/50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <div className="text-sm text-gray-400 uppercase tracking-wider mb-4">REALIDADES EMPRESARIALES</div>
-          <h2 className="text-3xl sm:text-5xl font-bold mb-6">¿Te suena familiar alguna de estas situaciones?</h2>
+          <div className="text-sm text-gray-400 uppercase tracking-wider mb-4">BUSINESS REALITIES</div>
+          <h2 className="text-3xl sm:text-5xl font-bold mb-6">Do any of these situations sound familiar?</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            He trabajado con empresas que han vivido exactamente estos problemas. La buena noticia es que todos tienen
-            solución.
+            I have worked with companies that have experienced exactly these problems. The good news is that all of them
+            have a solution.
           </p>
         </div>
 
@@ -48,11 +48,11 @@ export default function PainPointsSection() {
           ))}
         </div>
 
-        {/* Transición empática */}
+        {/* Empathetic transition */}
         <div className="text-center mt-16">
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Si has asentido con la cabeza leyendo esto, no estás solo.
-            <span className="text-white font-semibold"> Y más importante: tiene solución.</span>
+            If you've nodded your head reading this, you're not alone.
+            <span className="text-white font-semibold"> And more importantly: there is a solution.</span>
           </p>
         </div>
       </div>
