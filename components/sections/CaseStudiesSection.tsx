@@ -8,7 +8,7 @@ export default function CaseStudiesSection() {
         <div className="text-center mb-16">
           <div className="text-sm text-gray-400 uppercase tracking-wider mb-4">SUCCESS STORIES</div>
           <h2 className="text-3xl sm:text-5xl font-bold mb-6">Companies that already made it</h2>
-          <p className="text-xl text-gray-300">Real results from companies like yours</p>
+          
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">

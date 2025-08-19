@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function ValuePropositionSection() {
   return (
-    <section id="value-proposition" className="py-20 px-4 sm:px-6 bg-zinc-900/50">
+    <section id="value-proposition" className="px-4 sm:px-6 bg-zinc-900/50 py-5">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Visual/Stats */}
