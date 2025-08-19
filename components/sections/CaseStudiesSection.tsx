@@ -6,7 +6,7 @@ export default function CaseStudiesSection() {
     <section id="casos-exito" className="py-20 px-4 sm:px-6 bg-zinc-900/50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <div className="text-sm text-gray-400 uppercase tracking-wider mb-4">SUCCESS STORIES</div>
+          
           <h2 className="text-3xl sm:text-5xl font-bold mb-6">Companies that already made it</h2>
           
         </div>

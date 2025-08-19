@@ -55,9 +55,7 @@ export default function FinalCTASection() {
           <>
             <div className="text-center mb-12">
               <h2 className="text-4xl sm:text-5xl font-bold mb-6">Shall we talk?</h2>
-              <p className="text-xl text-gray-300">
-                Tell me about your company and I'll give you a free initial diagnosis
-              </p>
+              
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-6">

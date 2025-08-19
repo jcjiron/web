@@ -9,10 +9,7 @@ export default function HeroSection() {
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold leading-tight mb-6">
           Has your company outgrown its system?
         </h1>
-        <p className="text-xl sm:text-2xl text-gray-300 mb-8 leading-relaxed">
-          I design software that <span className="text-white font-semibold">powers your growth</span> instead of
-          limiting it.
-        </p>
+        
 
         <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center">
           <Link

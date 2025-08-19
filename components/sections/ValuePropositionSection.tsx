@@ -21,10 +21,7 @@ export default function ValuePropositionSection() {
           <div>
             <h2 className="text-3xl sm:text-5xl font-bold mb-6">The Solution</h2>
 
-            <p className="text-xl text-gray-300 mb-8">
-              A system designed specifically for your company that{" "}
-              <span className="text-white font-semibold">grows with you.</span>
-            </p>
+            
 
             <div className="space-y-4 mb-8">
               <div className="flex items-center gap-3">
